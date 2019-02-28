@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7A19763222706EB0037C77C /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A19762222706EB0037C77C /* Goal.swift */; };
+		C7A1976522270C0A0037C77C /* TargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1976422270C090037C77C /* TargetViewController.swift */; };
+		C7A1978B2227F4EB0037C77C /* QuotClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1978A2227F4EB0037C77C /* QuotClient.swift */; };
 		C7D670E02216056D00E2D4FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D670DF2216056D00E2D4FC /* AppDelegate.swift */; };
-		C7D670E22216056D00E2D4FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D670E12216056D00E2D4FC /* ViewController.swift */; };
 		C7D670E52216056D00E2D4FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D670E32216056D00E2D4FC /* Main.storyboard */; };
 		C7D670E82216056D00E2D4FC /* Protivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7D670E62216056D00E2D4FC /* Protivity.xcdatamodeld */; };
 		C7D670EA2216056F00E2D4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D670E92216056F00E2D4FC /* Assets.xcassets */; };
 		C7D670ED2216056F00E2D4FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D670EB2216056F00E2D4FC /* LaunchScreen.storyboard */; };
+		C7D670F52216088400E2D4FC /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D670F42216088400E2D4FC /* ToDo.swift */; };
+		C7D670F72216090C00E2D4FC /* GoalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D670F62216090C00E2D4FC /* GoalsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7A19762222706EB0037C77C /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		C7A1976422270C090037C77C /* TargetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetViewController.swift; sourceTree = "<group>"; };
+		C7A1978A2227F4EB0037C77C /* QuotClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotClient.swift; sourceTree = "<group>"; };
 		C7D670DC2216056D00E2D4FC /* Protivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Protivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D670DF2216056D00E2D4FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7D670E12216056D00E2D4FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7D670E42216056D00E2D4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7D670E72216056D00E2D4FC /* Protivity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Protivity.xcdatamodel; sourceTree = "<group>"; };
 		C7D670E92216056F00E2D4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7D670EC2216056F00E2D4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7D670EE2216056F00E2D4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7D670F42216088400E2D4FC /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		C7D670F62216090C00E2D4FC /* GoalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7A197892227F4BA0037C77C /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				C7A1978A2227F4EB0037C77C /* QuotClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
 		C7D670D32216056D00E2D4FC = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +72,43 @@
 		C7D670DE2216056D00E2D4FC /* Protivity */ = {
 			isa = PBXGroup;
 			children = (
+				C7D670FA221621BF00E2D4FC /* Model */,
+				C7D670F92216219800E2D4FC /* view controllers */,
+				C7D670F82216217000E2D4FC /* assets */,
 				C7D670DF2216056D00E2D4FC /* AppDelegate.swift */,
-				C7D670E12216056D00E2D4FC /* ViewController.swift */,
-				C7D670E32216056D00E2D4FC /* Main.storyboard */,
-				C7D670E92216056F00E2D4FC /* Assets.xcassets */,
-				C7D670EB2216056F00E2D4FC /* LaunchScreen.storyboard */,
 				C7D670EE2216056F00E2D4FC /* Info.plist */,
 				C7D670E62216056D00E2D4FC /* Protivity.xcdatamodeld */,
+				C7D670F42216088400E2D4FC /* ToDo.swift */,
 			);
 			path = Protivity;
+			sourceTree = "<group>";
+		};
+		C7D670F82216217000E2D4FC /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				C7D670E92216056F00E2D4FC /* Assets.xcassets */,
+				C7D670E32216056D00E2D4FC /* Main.storyboard */,
+				C7D670EB2216056F00E2D4FC /* LaunchScreen.storyboard */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		C7D670F92216219800E2D4FC /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7D670F62216090C00E2D4FC /* GoalsTableViewController.swift */,
+				C7A1976422270C090037C77C /* TargetViewController.swift */,
+			);
+			path = "view controllers";
+			sourceTree = "<group>";
+		};
+		C7D670FA221621BF00E2D4FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7A197892227F4BA0037C77C /* Client */,
+				C7A19762222706EB0037C77C /* Goal.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D670F52216088400E2D4FC /* ToDo.swift in Sources */,
+				C7A1976522270C0A0037C77C /* TargetViewController.swift in Sources */,
+				C7D670F72216090C00E2D4FC /* GoalsTableViewController.swift in Sources */,
+				C7A1978B2227F4EB0037C77C /* QuotClient.swift in Sources */,
 				C7D670E82216056D00E2D4FC /* Protivity.xcdatamodeld in Sources */,
-				C7D670E22216056D00E2D4FC /* ViewController.swift in Sources */,
+				C7A19763222706EB0037C77C /* Goal.swift in Sources */,
 				C7D670E02216056D00E2D4FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
