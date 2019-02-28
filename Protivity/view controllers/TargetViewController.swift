@@ -8,15 +8,29 @@
 
 import UIKit
 
-class TargetViewController: UIViewController {
+class TargetViewController: UITableViewController {
 
+    @IBOutlet weak var isComplete: UISwitch!
+    @IBOutlet weak var goalTitle: UITextField!
+    @IBOutlet weak var dateLable: UILabel!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var goalTextView: UITextView!
+    
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUIView()
     }
     
-
-   
-
 }
+
+extension TargetViewController{
+    func setupUIView(){
+        setSaveButton()
+        saveButton.isEnabled = false
+        
+    }
+ 
+}
+

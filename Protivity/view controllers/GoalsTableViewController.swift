@@ -11,6 +11,7 @@ import UIKit
 class GoalsTableViewController: UITableViewController {
     
     var goals = [Goal]()
+    var dataController: DataController!
     
     override func viewDidLoad() {
         navigationItem.leftBarButtonItem = editButtonItem
@@ -26,7 +27,18 @@ class GoalsTableViewController: UITableViewController {
         
     }
     
-
+    func loadQuote(){
+        let QuoteClient = QuotClient.currentSession()
+        QuoteClient.getRandomQuote() { success, quote, error in
+            if success == false {
+                QuoteClient.displayError(error!, self)
+            }
+            
+            print(quote)
+            //TODO: Print  a random quote to the dispaly 
+        }
+        
+    }
 }
 
 extension GoalsTableViewController {
