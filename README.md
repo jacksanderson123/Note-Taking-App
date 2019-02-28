@@ -1,6 +1,5 @@
 # Goals-App
-This is a simpele IOS(Swift) Goal setting application. The app allows you to create and manage your primary goals, then create targets as mini goals to help you achive your primary goals. 
-
+This is a simpele IOS(Swift) Goal setting application. The app allows you to create and manage your primary goals, then create targets as mini goals to help you achive your primary goals. It also encourages you by providing a new and inspiring qoute every time you load the app.
 
 # Install
 
