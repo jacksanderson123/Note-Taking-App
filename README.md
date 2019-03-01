@@ -11,3 +11,6 @@ Once in xCode go to..
 - Change team under signing
 
 Then run complie and run the application
+
+# Known Bugs
+Sometimes the quote will be provided with special character code, html is removed with reg-ex. 
