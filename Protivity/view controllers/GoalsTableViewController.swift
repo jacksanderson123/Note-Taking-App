@@ -8,19 +8,19 @@
 
 import UIKit
 
-class GoalsTableViewController: UITableViewController {
+class GoalsTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var inspirationalQuote: UILabel!
     
     var goals = [Goal]()
     var dataController: DataController!
     
     override func viewDidLoad() {
-        navigationItem.leftBarButtonItem = editButtonItem
         super.viewDidLoad()
-        if let savedGoals = Goal.loadGoals(){
-            goals = savedGoals
-        }else{
-            goals = Goal.loadSampleGoals()
-        }
+        loadQuote()
+        
     }
     
     @IBAction func unwindToGoalsList(segue: UIStoryboardSegue){
@@ -30,12 +30,12 @@ class GoalsTableViewController: UITableViewController {
     func loadQuote(){
         let QuoteClient = QuotClient.currentSession()
         QuoteClient.getRandomQuote() { success, quote, error in
-            if success == false {
+            if !success{
                 QuoteClient.displayError(error!, self)
             }
-            
-            print(quote)
-            //TODO: Print  a random quote to the dispaly 
+            DispatchQueue.main.async {
+                self.inspirationalQuote.text = quote!
+            }
         }
         
     }
@@ -43,24 +43,24 @@ class GoalsTableViewController: UITableViewController {
 
 extension GoalsTableViewController {
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return goals.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "GoalCellIdentifier", for: indexPath)
-        let todo = goals[indexPath.row]
-        cell.textLabel?.text = todo.title
+        let goal = goals[indexPath.row]
+        cell.textLabel?.text = goal.title
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, canEditRowAt
+     func tableView(_ tableView: UITableView, canEditRowAt
         indexPath: IndexPath) -> Bool {
         return true
     }
     
-    override func tableView(_ tableView: UITableView, commit
+     func tableView(_ tableView: UITableView, commit
         editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath:
         IndexPath) {
         if editingStyle == .delete {

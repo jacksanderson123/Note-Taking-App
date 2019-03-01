@@ -14,11 +14,12 @@ extension QuotClient{
     
     struct Quote {
         static let APIScheme = "http"
-        static let APIHost = "quotesondesign.com/wp-json/posts"
+        static let APIHost = "quotesondesign.com"
         static let APIPath = "/wp-json/posts"
         static let APIMethod = "GET"
         static let APIParameters = "filter[orderby]=rand&filter[posts_per_page]=1"
-
+        //For Demo Purposes Only
+        static let APIURL = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1"
     }
  
     

@@ -13,12 +13,9 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-   // let dataController = DataController(modelName: "CoreDataModel")
+    let dataController = DataController(modelName: "CoreDataModel")
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//        dataController.load()
-//        let navigationController = window?.rootViewController as! UINavigationController
-//        let goalsTableViewController = navigationController.topViewController as! UITableViewController
-//       // goalsTableViewController.tabBarController = dataController
+        dataController.load()
         return true
     }
 

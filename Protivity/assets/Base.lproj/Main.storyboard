@@ -166,19 +166,19 @@
         <!--My Goals-->
         <scene sceneID="22H-VR-q97">
             <objects>
-                <viewController id="AyZ-dH-vZw" sceneMemberID="viewController">
+                <viewController id="AyZ-dH-vZw" customClass="GoalsTableViewController" customModule="Protivity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u73-rz-aGk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEr-da-pBT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEr-da-pBT">
                                 <rect key="frame" x="20" y="135" width="335" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6wj-NJ-ey2">
-                                <rect key="frame" x="0.0" y="192" width="375" height="475"/>
+                                <rect key="frame" x="0.0" y="159" width="375" height="508"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GoalCellIdentifier" id="fp0-YJ-WEF">
@@ -203,7 +203,7 @@
                             <constraint firstItem="tEr-da-pBT" firstAttribute="top" secondItem="Keg-8h-PKb" secondAttribute="top" constant="19" id="UHO-0e-k87"/>
                             <constraint firstItem="tEr-da-pBT" firstAttribute="leading" secondItem="Keg-8h-PKb" secondAttribute="leading" constant="20" id="blc-cG-F53"/>
                             <constraint firstItem="6wj-NJ-ey2" firstAttribute="bottom" secondItem="Keg-8h-PKb" secondAttribute="bottom" id="fDD-I0-Z24"/>
-                            <constraint firstItem="6wj-NJ-ey2" firstAttribute="top" secondItem="tEr-da-pBT" secondAttribute="bottom" constant="57" id="gSU-0K-R8D"/>
+                            <constraint firstItem="6wj-NJ-ey2" firstAttribute="top" secondItem="tEr-da-pBT" secondAttribute="bottom" constant="24" id="gSU-0K-R8D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Keg-8h-PKb"/>
                     </view>
@@ -214,6 +214,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="inspirationalQuote" destination="tEr-da-pBT" id="Eqo-fg-82k"/>
+                        <outlet property="tableView" destination="6wj-NJ-ey2" id="rV1-DI-03I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QtL-SB-MJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
