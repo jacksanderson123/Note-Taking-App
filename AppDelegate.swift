@@ -16,17 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let dataController = DataController(modelName: "CoreDataModel")
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         dataController.load()
+            let navigationController = window?.rootViewController as! UINavigationController
+            let GoalsTableViewController = navigationController.topViewController as! GoalsTableViewController
+            GoalsTableViewController.dataController = dataController
         return true
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-    //    try? dataController.viewContext.save()
+        try? dataController.viewContext.save()
     }
     
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        // Saves changes in the application's managed object context before the application terminates.
-     //   try? dataController.viewContext.save()
+        try? dataController.viewContext.save()
     }
 
 

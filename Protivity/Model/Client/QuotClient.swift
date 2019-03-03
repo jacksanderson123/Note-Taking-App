@@ -68,7 +68,7 @@ class QuotClient: NSObject {
      
         do {
       
-            parsedData = try JSONSerialization.jsonObject(with: data , options: .allowFragments) as! [[String : AnyObject]]
+            parsedData = try JSONSerialization.jsonObject(with: data , options: .allowFragments) as? [[String : AnyObject]]
         }catch{
             print("json error: \(error)")
             parseDataCompletionHandler(nil, "Could not parse the data as JSON")

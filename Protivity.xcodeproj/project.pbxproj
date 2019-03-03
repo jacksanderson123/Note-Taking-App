@@ -7,29 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C74E3798222B44010057F5C9 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E3797222B44010057F5C9 /* Cell.swift */; };
+		C74E379A222B44200057F5C9 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E3799222B44200057F5C9 /* GoalCell.swift */; };
+		C74E379D222B92FB0057F5C9 /* TargetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E379C222B92FB0057F5C9 /* TargetCell.swift */; };
+		C74E37A0222B96AC0057F5C9 /* goals.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C74E379F222B96AC0057F5C9 /* goals.jpeg */; };
 		C7A19763222706EB0037C77C /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A19762222706EB0037C77C /* Goal.swift */; };
 		C7A1978B2227F4EB0037C77C /* QuotClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1978A2227F4EB0037C77C /* QuotClient.swift */; };
 		C7A197922228450C0037C77C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A197912228450C0037C77C /* DataController.swift */; };
 		C7A19794222845930037C77C /* QuotConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A19793222845930037C77C /* QuotConstants.swift */; };
 		C7A19796222849A50037C77C /* SaveGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A19795222849A50037C77C /* SaveGoalsViewController.swift */; };
-		C7A1979822284AA60037C77C /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1979722284AA60037C77C /* DashBoardViewController.swift */; };
+		C7A1979822284AA60037C77C /* GoalDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1979722284AA60037C77C /* GoalDetailsTableViewController.swift */; };
 		C7A1979B22284F530037C77C /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7A1979922284F530037C77C /* CoreDataModel.xcdatamodeld */; };
 		C7D670E02216056D00E2D4FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D670DF2216056D00E2D4FC /* AppDelegate.swift */; };
 		C7D670E52216056D00E2D4FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D670E32216056D00E2D4FC /* Main.storyboard */; };
 		C7D670E82216056D00E2D4FC /* Protivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7D670E62216056D00E2D4FC /* Protivity.xcdatamodeld */; };
 		C7D670EA2216056F00E2D4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D670E92216056F00E2D4FC /* Assets.xcassets */; };
 		C7D670ED2216056F00E2D4FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D670EB2216056F00E2D4FC /* LaunchScreen.storyboard */; };
-		C7D670F52216088400E2D4FC /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D670F42216088400E2D4FC /* ToDo.swift */; };
 		C7D670F72216090C00E2D4FC /* GoalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D670F62216090C00E2D4FC /* GoalsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C74E3797222B44010057F5C9 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		C74E3799222B44200057F5C9 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		C74E379C222B92FB0057F5C9 /* TargetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetCell.swift; sourceTree = "<group>"; };
+		C74E379F222B96AC0057F5C9 /* goals.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goals.jpeg; sourceTree = "<group>"; };
 		C7A19762222706EB0037C77C /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		C7A1978A2227F4EB0037C77C /* QuotClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotClient.swift; sourceTree = "<group>"; };
 		C7A197912228450C0037C77C /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		C7A19793222845930037C77C /* QuotConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotConstants.swift; sourceTree = "<group>"; };
 		C7A19795222849A50037C77C /* SaveGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveGoalsViewController.swift; sourceTree = "<group>"; };
-		C7A1979722284AA60037C77C /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		C7A1979722284AA60037C77C /* GoalDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailsTableViewController.swift; sourceTree = "<group>"; };
 		C7A1979A22284F530037C77C /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		C7D670DC2216056D00E2D4FC /* Protivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Protivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D670DF2216056D00E2D4FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +45,6 @@
 		C7D670E92216056F00E2D4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7D670EC2216056F00E2D4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7D670EE2216056F00E2D4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7D670F42216088400E2D4FC /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		C7D670F62216090C00E2D4FC /* GoalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +59,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C74E3796222B43E00057F5C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C74E379B222B442A0057F5C9 /* protocol */,
+				C74E3799222B44200057F5C9 /* GoalCell.swift */,
+				C74E379C222B92FB0057F5C9 /* TargetCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C74E379B222B442A0057F5C9 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C74E3797222B44010057F5C9 /* Cell.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		C74E379E222B969B0057F5C9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C74E379F222B96AC0057F5C9 /* goals.jpeg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		C7A197892227F4BA0037C77C /* Client */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +106,7 @@
 		C7D670D32216056D00E2D4FC = {
 			isa = PBXGroup;
 			children = (
+				C7D670DF2216056D00E2D4FC /* AppDelegate.swift */,
 				C7D670DE2216056D00E2D4FC /* Protivity */,
 				C7D670DD2216056D00E2D4FC /* Products */,
 			);
@@ -90,13 +123,12 @@
 		C7D670DE2216056D00E2D4FC /* Protivity */ = {
 			isa = PBXGroup;
 			children = (
+				C74E3796222B43E00057F5C9 /* Views */,
 				C7D670FA221621BF00E2D4FC /* Model */,
 				C7D670F92216219800E2D4FC /* view controllers */,
 				C7D670F82216217000E2D4FC /* assets */,
-				C7D670DF2216056D00E2D4FC /* AppDelegate.swift */,
 				C7D670EE2216056F00E2D4FC /* Info.plist */,
 				C7D670E62216056D00E2D4FC /* Protivity.xcdatamodeld */,
-				C7D670F42216088400E2D4FC /* ToDo.swift */,
 			);
 			path = Protivity;
 			sourceTree = "<group>";
@@ -104,6 +136,7 @@
 		C7D670F82216217000E2D4FC /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				C74E379E222B969B0057F5C9 /* Images */,
 				C7D670E92216056F00E2D4FC /* Assets.xcassets */,
 				C7D670E32216056D00E2D4FC /* Main.storyboard */,
 				C7D670EB2216056F00E2D4FC /* LaunchScreen.storyboard */,
@@ -116,7 +149,7 @@
 			children = (
 				C7D670F62216090C00E2D4FC /* GoalsTableViewController.swift */,
 				C7A19795222849A50037C77C /* SaveGoalsViewController.swift */,
-				C7A1979722284AA60037C77C /* DashBoardViewController.swift */,
+				C7A1979722284AA60037C77C /* GoalDetailsTableViewController.swift */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -189,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74E37A0222B96AC0057F5C9 /* goals.jpeg in Resources */,
 				C7D670ED2216056F00E2D4FC /* LaunchScreen.storyboard in Resources */,
 				C7D670EA2216056F00E2D4FC /* Assets.xcassets in Resources */,
 				C7D670E52216056D00E2D4FC /* Main.storyboard in Resources */,
@@ -202,15 +236,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D670F52216088400E2D4FC /* ToDo.swift in Sources */,
 				C7D670F72216090C00E2D4FC /* GoalsTableViewController.swift in Sources */,
 				C7A1979B22284F530037C77C /* CoreDataModel.xcdatamodeld in Sources */,
 				C7A1978B2227F4EB0037C77C /* QuotClient.swift in Sources */,
 				C7A197922228450C0037C77C /* DataController.swift in Sources */,
 				C7D670E82216056D00E2D4FC /* Protivity.xcdatamodeld in Sources */,
+				C74E379D222B92FB0057F5C9 /* TargetCell.swift in Sources */,
 				C7A19794222845930037C77C /* QuotConstants.swift in Sources */,
 				C7A19763222706EB0037C77C /* Goal.swift in Sources */,
-				C7A1979822284AA60037C77C /* DashBoardViewController.swift in Sources */,
+				C7A1979822284AA60037C77C /* GoalDetailsTableViewController.swift in Sources */,
+				C74E379A222B44200057F5C9 /* GoalCell.swift in Sources */,
+				C74E3798222B44010057F5C9 /* Cell.swift in Sources */,
 				C7D670E02216056D00E2D4FC /* AppDelegate.swift in Sources */,
 				C7A19796222849A50037C77C /* SaveGoalsViewController.swift in Sources */,
 			);
