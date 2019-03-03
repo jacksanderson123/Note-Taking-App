@@ -17,7 +17,7 @@ Goals and targets can both be deleted by swiping, from right to left. If you swi
 
 Targets are small reminders of task's that need to be acomplished to achive your goals. 
 
-<img src="Protivity/assets/Images/new-targets.jpeg" width="256">
+<img src="Protivity/assets/Images/new-target.jpeg" width="256">
 
 # Libarys/API
 
