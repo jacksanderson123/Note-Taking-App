@@ -11,6 +11,9 @@
 		C74E379A222B44200057F5C9 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E3799222B44200057F5C9 /* GoalCell.swift */; };
 		C74E379D222B92FB0057F5C9 /* TargetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E379C222B92FB0057F5C9 /* TargetCell.swift */; };
 		C74E37A0222B96AC0057F5C9 /* goals.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C74E379F222B96AC0057F5C9 /* goals.jpeg */; };
+		C74E37A2222B9BDA0057F5C9 /* new-goal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C74E37A1222B9BDA0057F5C9 /* new-goal.jpeg */; };
+		C74E37A4222B9C470057F5C9 /* new-target.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C74E37A3222B9C460057F5C9 /* new-target.jpeg */; };
+		C74E37A6222B9C6B0057F5C9 /* delete-goal.PNG in Resources */ = {isa = PBXBuildFile; fileRef = C74E37A5222B9C6A0057F5C9 /* delete-goal.PNG */; };
 		C7A19763222706EB0037C77C /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A19762222706EB0037C77C /* Goal.swift */; };
 		C7A1978B2227F4EB0037C77C /* QuotClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1978A2227F4EB0037C77C /* QuotClient.swift */; };
 		C7A197922228450C0037C77C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A197912228450C0037C77C /* DataController.swift */; };
@@ -31,6 +34,9 @@
 		C74E3799222B44200057F5C9 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		C74E379C222B92FB0057F5C9 /* TargetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetCell.swift; sourceTree = "<group>"; };
 		C74E379F222B96AC0057F5C9 /* goals.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goals.jpeg; sourceTree = "<group>"; };
+		C74E37A1222B9BDA0057F5C9 /* new-goal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "new-goal.jpeg"; sourceTree = "<group>"; };
+		C74E37A3222B9C460057F5C9 /* new-target.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "new-target.jpeg"; sourceTree = "<group>"; };
+		C74E37A5222B9C6A0057F5C9 /* delete-goal.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete-goal.PNG"; sourceTree = "<group>"; };
 		C7A19762222706EB0037C77C /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		C7A1978A2227F4EB0037C77C /* QuotClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotClient.swift; sourceTree = "<group>"; };
 		C7A197912228450C0037C77C /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -81,6 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				C74E379F222B96AC0057F5C9 /* goals.jpeg */,
+				C74E37A1222B9BDA0057F5C9 /* new-goal.jpeg */,
+				C74E37A5222B9C6A0057F5C9 /* delete-goal.PNG */,
+				C74E37A3222B9C460057F5C9 /* new-target.jpeg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -222,10 +231,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74E37A2222B9BDA0057F5C9 /* new-goal.jpeg in Resources */,
 				C74E37A0222B96AC0057F5C9 /* goals.jpeg in Resources */,
 				C7D670ED2216056F00E2D4FC /* LaunchScreen.storyboard in Resources */,
 				C7D670EA2216056F00E2D4FC /* Assets.xcassets in Resources */,
+				C74E37A4222B9C470057F5C9 /* new-target.jpeg in Resources */,
 				C7D670E52216056D00E2D4FC /* Main.storyboard in Resources */,
+				C74E37A6222B9C6B0057F5C9 /* delete-goal.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
